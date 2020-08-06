@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alec Greene's Portfolio</title>
+
+        <!-- Link Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- Link CSS stylesheet -->
+        <link rel="stylesheet" href="./Style/main.css">
+        <link rel="stylesheet" href="./Style/contact.css">
+    </head>
+
+    <body class="body">
+
+        <!-- Navigation Bar -->
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+            
+            <!-- Home link -->
+            <a href="index.html" class="navbar-brand">Alec W Greene</a>
+
+            <!-- Collapsing Menu -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsing Navbar -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link">Portfolio</a></li>
+                    
+                    <!-- Assignments Mega Menu -->
+                    <li class="nav-item dropdown has-megamenu">
+
+                        <!-- Assignments Link -->
+                        <a class="nav-link" href="#" id="nav-link-assignments" data-toggle="nav-drop">Assignments</a>
+                        
+                        <!-- MegaMenu Container -->
+                        <div class="dropdown-menu megamenu">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col-6 megamenu-col">
+                                    <h2 class="dropdown-header">Projects</h2>
+                                    
+                                    <a class="dropdown-item" href="https://alecwgreene.github.io/MSU-Project-1/index.html">Project 1</a>
+                                </div>
+                            
+                                <div class="col-6 megamenu-col">
+                                    <h2 class="dropdown-header">Homework</h2>
+                                    
+                                    <a class="dropdown-item" href="https://alecwgreene.github.io/Assignment-01/">Code Refactor</a>
+                                    <a class="dropdown-item" href="https://alecwgreene.github.io/Assignment-02/">Portfolio Page</a>
+                                    <a class="dropdown-item" href="https://alecwgreene.github.io/Assignment-03/">Password Generator</a>
+                                    <a class="dropdown-item" href="https://alecwgreene.github.io/Assignment-04-Code-Quiz/">Code Quiz</a>
+                                    <a class="dropdown-item" href="https://alecwgreene.github.io/Assignment-05-Day-Planner/">Day Planner</a>
+                                    <a class="dropdown-item" href="https://alecwgreene.github.io/Assignment-06-Weather-App/">Weather App</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <!-- Body Container -->
+        <div class="container mx-auto d-flex flex-column align-items-center" id="document-body">
+            <h1 class="text-center">How to Get in Contact with Me</h1>
+            <ul class="contact-list">
+                <li>Email: <a class="contact-link" href="mailto: alecwgreene@gmail.com">AlecWGreene@gmail.com</a></li>
+                <li>LinkedIn: <a class="contact-link" href="https://www.linkedin.com/in/alec-greene-29a5b41b4/">https://www.linkedin.com/in/alec-greene-29a5b41b4/</a></li>
+                <li>Github: <a class="contact-link" href="https://github.com/AlecWGreene">https://github.com/AlecWGreene</a></li>
+            </ul>
+            I'm will be looking for a full-time job in about 6 months, so if you are interested in communicating with me about an opportunity I'm currently looking for positions like such:
+            <ul style="max-width: 50%;">
+                <li>Back-end development</li>
+                <li>Using JavaScript, C#, C++, or Python </li>
+                <li>Preferably in Game Development, but I'm also looking for jobs in back-end web development, application development, and AI design</li>
+                <li>Remote, or located in Chicago, Illinois</li>
+                <li>Entry level position or internship, but contract work or full time junior developer will be considered if the timeframe is appropriate</li>
+            </ul>
+        </div>
+
+    </body>
+
+    <!-- Links JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Links Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Links page script -->
+    <script src="./JavaScript/script.js"></script>
+</html>
