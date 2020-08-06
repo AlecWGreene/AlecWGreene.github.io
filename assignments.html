@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- Link Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- Link CSS stylesheet -->
+        <link rel="stylesheet" href="./Style/main.css">
+        <link rel="stylesheet" href="./Style/assignments.css">
+    </head>
+
+    <body class="body">
+
+        <!-- Navigation Bar -->
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+            
+            <!-- Home link -->
+            <a href="index.html" class="navbar-brand">Alec W Greene</a>
+
+            <!-- Collapsing Menu -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                
+
+            <!-- Collapsing Navbar -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link">Portfolio</a></li>
+                    
+                    <!-- Assignments Mega Menu -->
+                    <li class="nav-item dropdown has-megamenu">
+
+                        <!-- Assignments Link -->
+                        <a class="nav-link active" href="#" id="nav-link-assignments" data-toggle="nav-drop">Assignments</a>
+                        
+                        <!-- MegaMenu Container -->
+                        <div class="collapse">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col-6 megamenu-col">
+                                    <h2 class="dropdown-header">Projects</h2>
+                                    
+                                    <a class="dropdown-item" href="#">Project 1</a>
+                                </div>
+                            
+                                <div class="col-6 megamenu-col">
+                                    <h2 class="dropdown-header">Homework</h2>
+                                    
+                                    <a class="dropdown-item" href="#">Assignment 1</a>
+                                    <a class="dropdown-item" href="#">Assignment 2</a>
+                                    <a class="dropdown-item" href="#">Assignment 3</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <!-- Body Container -->
+        <div class="container mx-auto" id="document-body">
+            <!-- Projects -->
+            <div>
+                <h1 class="text-center assignments-section-title"> Projects</h1>
+                <p>These projects were completed in 4 person teams, with at least a week and half dedicated to development. Each project will represent a different story behind applicable full-stack development experience.</p>
+                <h2 class="text-center">Travel Planner</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div><b>Link:</b> <a href="https://alecwgreene.github.io/MSU-Project-1/index.html" class="project-link">https://alecwgreene.github.io/MSU-Project-1/index.html</a></div>
+                            <div><b>Team:</b> Alec Greene (Project Lead), Ron Pitts, Alina Gorelik </div>
+                            <p> <b>Description:</b> The main focus of this project was to establish an effective workflow for the team and to practice using the git CLI. As such this project had a tumultuous development cycle, with conflicting ideas about scope and inexperience with the git CLI proving difficult to work around. In the end, the MVP was eventually reached and some additional features were able to be implemented at the 11th hour. The site serves as a 2-in-1 weather forecast and tourist recommendation app. Users can search for places in several pre-selected countries and tourist attractions within 5000m of the location's center will be returned, filtered by the category the user has active.</p>
+                        </div>
+
+                        <div class="col-md-6 col-0">
+                            <img src="Assets/Images/MSU-Project-1-screencap.png" width=100%>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center"> Project 2 </h2>
+                <p class="text-center">Coming Soon!</p>
+                <h2 class="text-center"> Project 3 </h2>
+                <p class="text-center"> Project is scheduled to be completed in late November.</p>
+            </div>
+
+            <!-- Assignments -->
+            <h1 class="text-center mt-5 assignments-section-title"> Assignments </h1>
+            <p>These tabs will link to deployed sites that were completed as homework assignments. Most of them will be smaller in scope and simpler in execution, but will display coding practices and the general learning progression I had throughout my bootcamp and other learning experiences.</p>
+            
+            <div id="assignments-accordion">
+                <!-- Assignment 1 -->
+                <div class="card" id="assignment-2-card">
+                    <div class="card-header">
+                        <button class="btn assignments-accordion-button" data-target="#assignment-2-collapse" data-toggle="collapse"><h5><a href="https://alecwgreene.github.io/Assignment-01/" class="assignments-accordion-link">Assignment 1</a></h5> <div class="mx-auto">Code Refactor</div></button>  
+                    </div>
+                    <div class="collapse assignments-accordion-body" id="assignment-2-collapse" data-parent="#assignments-accordion">
+                        Refactored html and css code accomodating common coding best practices like commenting, naming conventions, consolidating css styles, and indenting code.
+                    </div>
+                </div>
+                <!-- Assignment 2 -->
+                <div class="card" id="assignment-3-card">
+                    <div class="card-header">
+                        <button class="btn assignments-accordion-button" data-target="#assignment-3-collapse" data-toggle="collapse"><h5><a href="https://alecwgreene.github.io/Assignment-02/" class="assignments-accordion-link">Assignment 2</a></h5> Portfolio Page</button>  
+                    </div>
+                    <div class="collapse assignments-accordion-body" id="assignment-3-collapse" data-parent="#assignments-accordion">
+                        A simple portfolio site using bootstrap to generate a simple responsive design.
+                    </div>
+                </div>
+                <!-- Assignment 3 -->
+                <div class="card" id="assignment-4-card">
+                    <div class="card-header">
+                        <button class="btn assignments-accordion-button" data-target="#assignment-4-collapse" data-toggle="collapse"><h5><a href="https://alecwgreene.github.io/Assignment-03/" class="assignments-accordion-link">Assignment 3</a></h5> Password Generator</button>  
+                    </div>
+                    <div class="collapse assignments-accordion-body" id="assignment-4-collapse" data-parent="#assignments-accordion">
+                        Uses a simple Math.random to generate a random password.
+                    </div>
+                </div>
+                <!-- Assignment 4 -->
+                <div class="card" id="assignment-5-card">
+                    <div class="card-header">
+                        <button class="btn assignments-accordion-button" data-target="#assignment-5-collapse" data-toggle="collapse"><h5><a href="https://alecwgreene.github.io/Assignment-04-Code-Quiz/" class="assignments-accordion-link">Assignment 4</a></h5> Code Quiz </button>
+                    </div>
+                    <div class="collapse assignments-accordion-body" id="assignment-5-collapse" data-parent="#assignments-accordion">
+                        Dynamically generates a quiz according to selected parameters, and then challenges the user to complete the quiz as accurately as possible while giving extra points for finishing quickly. The site uses local storage to track previous scores the user has submitted.
+                    </div>
+                </div>
+                <!-- Assignment 5 -->
+                <div class="card" id="assignment-6-card">
+                    <div class="card-header">
+                        <button class="btn assignments-accordion-button" data-target="#assignment-6-collapse" data-toggle="collapse"><h5> <a href="https://alecwgreene.github.io/Assignment-05-Day-Planner/" class="assignments-accordion-link">Assignment 5</a></h5>Day Planner</button>
+                    </div>
+                    <div class="collapse assignments-accordion-body" id="assignment-6-collapse" data-parent="#assignments-accordion">
+                        Using assigned css, the site implements the moment.js tools to provide a day planner application. Based on the time of day, the application will grey out time periods that have already passed, and allows the user to lock future entries by toggling the lock botton.
+                    </div>
+                </div>
+                <!-- Assignment 6 -->
+                <div class="card" id="assignment-7-card">
+                    <div class="card-header">
+                        <button class="btn assignments-accordion-button" data-target="#assignment-7-collapse" data-toggle="collapse"><h5><a href="https://alecwgreene.github.io/Assignment-06-Weather-App/" class="assignments-accordion-link">Assignment 6</a></h5> Weather Dashboard</button>
+                    </div>
+                    <div class="collapse assignments-accordion-body" id="assignment-7-collapse" data-parent="#assignments-accordion">
+                        Making use of the JQuery Ajax framework, this site will display weather information about a searched city. Both the current weather and the forecast for the next 5 days are displayed, as well as updating the recommended search buttons dynamically as the user searches locations.
+                    </div>
+                </div>
+                <!-- Assignment 8 -->
+                <div class="card" id="assignment-8-card">
+                    <div class="card-header">
+                        <button class="btn assignments-accordion-button" data-target="#assignment-8-collapse" data-toggle="collapse"><h5><a href="#" class="assignments-accordion-link">Assignment 8</a></h5>README Generator</button>
+                    </div>
+                    <div class="collapse assignments-accordion-body" id="assignment-8-collapse" data-parent="#assignments-accordion">
+                        A simple CLI that uses the npm package inquirer to collect user input and generate a pre-styled readme using the data. WIP!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <!-- Links JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Links Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Links page script -->
+    <script src="./JavaScript/script.js"></script>
+</html>
