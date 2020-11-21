@@ -1,0 +1,10 @@
+/* Contact list styling */
+.contact-list{
+    list-style: none;
+    justify-self: center;
+}
+
+.contact-link{
+    text-decoration: none;
+    color: rgb(172, 33, 33);
+}
