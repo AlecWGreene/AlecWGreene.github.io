@@ -1,6 +1,6 @@
 {
   "main": "node_modules/expo/AppEntry.js",
-  "homepage": "alecwgreene.github.io",
+  "homepage": "http://alecwgreene.github.io",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
