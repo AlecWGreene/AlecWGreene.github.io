@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alec Greene's Portfolio</title>
+
+        <!-- Link Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- Link CSS stylesheet -->
+        <link rel="stylesheet" href="./Style/main.css">
+        <link rel="stylesheet" href="./Style/index.css">
+    </head>
+
+    <body class="body">
+
+        <!-- Navigation Bar -->
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+            
+            <!-- Home link -->
+            <a href="index.html" class="navbar-brand">Alec W Greene</a>
+
+            <!-- Collapsing Menu -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsing Navbar -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link">Portfolio</a></li>
+                    
+                    <!-- Assignments Mega Menu -->
+                    <li class="nav-item dropdown has-megamenu">
+
+                        <!-- Assignments Link -->
+                        <a class="nav-link" href="assignments.html" id="nav-link-assignments" data-toggle="nav-drop">Assignments</a>
+                        
+                        <!-- MegaMenu Container -->
+                        <div class="dropdown-menu megamenu">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col-6 megamenu-col">
+                                    <h2 class="dropdown-header">Projects</h2>
+                                    
+                                    <a class="dropdown-item" href="https://alecwgreene.github.io/MSU-Project-1/index.html">Project 1</a>
+                                </div>
+                            
+                                <div class="col-6 megamenu-col">
+                                    <h2 class="dropdown-header">Homework</h2>
+                                    
+                                    <a class="dropdown-item" href="https://alecwgreene.github.io/Assignment-01/">Code Refactor</a>
+                                    <a class="dropdown-item" href="https://alecwgreene.github.io/Assignment-02/">Portfolio Page</a>
+                                    <a class="dropdown-item" href="https://alecwgreene.github.io/Assignment-03/">Password Generator</a>
+                                    <a class="dropdown-item" href="https://alecwgreene.github.io/Assignment-04-Code-Quiz/">Code Quiz</a>
+                                    <a class="dropdown-item" href="https://alecwgreene.github.io/Assignment-05-Day-Planner/">Day Planner</a>
+                                    <a class="dropdown-item" href="https://alecwgreene.github.io/Assignment-06-Weather-App/">Weather App</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <!-- Body Container -->
+        <div class="container mx-auto d-flex flex-column align-items-center" id="document-body">
+            <h1 class="text-center">Thanks for visiting my page!</h1>
+            <img src="Assets/Images/slackprofile.jpg" class="rounded-circle aboutMe-image img-fluid justify-self-center">
+            <p class="pt-4">
+                I am an aspiring game developer who has a passion for knowledge and challenge. I used to do research in theoretical math, more specifically representation theory of the Symmertic Groups and their applications to quantum cryptography. However, after some life events I've decided to pursue the more artistic expression of my talents in game design.
+                I've always been a big consumer of video games, and have been learning how to develop games using the Unity engine in C#. While I have yet to develop a true specialization, my current focus is on AI design and the applications of Machine Learning to game design. I am currently enrolled in a full-stack web development bootcamp
+                through Michigan State University. 
+            </p>
+            <p class="pb-5">
+                Feel free to take a look around, I will have a lot of my work deployed through github pages and the rest linked through github repositories. If you are interested in collaborating on a project, or inquiring about my availability for a job offer, I am currently looking and would be very excited to hear from you!
+            </p>
+        </div>
+
+    </body>
+
+    <!-- Links JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Links Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Links page script -->
+    <script src="./JavaScript/script.js"></script>
+</html>

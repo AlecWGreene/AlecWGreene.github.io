@@ -1,0 +1,82 @@
+{
+    "01 Code Refactor": {
+        "deployment": "https://alecwgreene.github.io/Assignment-01/",
+        "repository": "https://github.com/AlecWGreene/Assignment-01",
+        "contentType": "text",
+        "content": "Given mostly functional start code, I was tasked with updating the html tags to be more semantic, as well as refactoring the code to fit best practices."
+    },
+    "02 Portfolio v1": {
+        "repository": "https://github.com/AlecWGreene/Assignment-02",
+        "contentType": "text",
+        "content": "My first attempt at a portfolio site, built using html and css/bootstrap only. This was before I had learned any JavaScript. The main focus on this assignment was using proper css, and building a response website using bootstrap."
+    },
+    "03 Password Generator": {
+        "deployment": "https://alecwgreene.github.io/Assignment-03/",
+        "repository": "https://github.com/AlecWGreene/Assignment-03",
+        "contentType": "text",
+        "content": "My first JavaScript assignment, I was tasked with creating a simple site which creates a password using the user's selected parameters. I implemented a range slider with dynamically updating feedback, dynamic character set using checkboxes. I also wrote up an algorithm to perform a modified version of the SHA-256 hash algorithm, but it wound up not being a practical solution to the problem."
+    },
+    "04 Code Quiz": {
+        "deployment": "https://alecwgreene.github.io/Assignment-04-Code-Quiz/",
+        "repository": "https://github.com/AlecWGreene/Assignment-04-Code-Quiz",
+        "contentType": "text",
+        "content": "This was my first large scale javascript assignment, which was to create a website using html, javascript, jquery, and css/bootstrap to create a quiz. The site featues a configuration screen allowing the user to select a difficulty, and the number of questions. From there, the site will assemble a list of questions randomly chosen from 3 different question pools based on the user's chosen difficulty. Each question has a 2:00 minute timer which resets when the user answers the question. The top bar contains a slider, showing the status of each question and allowing the user to view but no re-answer the question. At the end, it will offer to store the user's score, saving it in local storage."
+    },
+    "05 Day Planner": {
+        "deployment": "https://alecwgreene.github.io/Assignment-05-Day-Planner/",
+        "repository": "https://github.com/AlecWGreene/Assignment-05-Day-Planner",
+        "contentType": "text",
+        "content": "Using moment.js, I was given starting css classes and instructed to create a work day planner using JQuery. The specifications for this assignment were much more stringent than the others, requiring that the timeslots should be locked based on the time of day, and that the user could save notes they type into local storage."
+    },
+    "06 Weather App": {
+        "deployment": "https://alecwgreene.github.io/Assignment-05-Weather-App/",
+        "repository": "https://github.com/AlecWGreene/Assignment-05-Weather-App",
+        "contentType": "text",
+        "content": "As my first experience with APIs, I was tasked with creating a response dashboard that would present weather data to the user. Using OpenWeatherAPI, I tested, destructured, and integrated the api output to allow the user to peform keyword searches for city weather reports, and then display that information in a comprehensive manner."
+    },
+    "08 ReadMe Generator": {
+        "repository": "https://github.com/AlecWGreene/Assignment-05-ReadMe-Generator",
+        "contentType": "text",
+        "content": "This assignment was my introduction into the NodeJS framework and the package inquirer. I was tasked with creating a Node CLI which would prompt the user for input and assemble a readme for their project. Utilizing the asyn/await syntax, I built a customized Inquirer prompt, which would allow the user to verify text submissions, and see the cumulative result as they typed the next section. This assignment taught me alot about using 3rd party packages as I learned how to disect the framework to perform custom behaviours."
+    },
+    "09 Employee Directory": {
+        "repository": "https://github.com/AlecWGreene/Assignment-09-Employee-Directory",
+        "contentType": "text",
+        "content": "This assignment was my first exposure to unit testing, using the Jest library. I used inquirer to build another NodeJS CLI, and was more or less building off of the previous homework's lessons. I built an app that allowed the user to enter in employee information, getting a live update of the current team as each member's information was submitted. Then when the user requests to render, the app will use predefined html templates and output a webpage displaying the team information."
+    },
+    "11 Note Taker": {
+        "deployment": "https://firece-wildwood-75541.herokuapp.com/",
+        "repository": "https://github.com/AlecWGreene/Assignment-11-Note-Taker",
+        "contentType": "text",
+        "content": "Real deployment! Using Heroku.com, I was tasked with creating a note taking app which used a db.json file to store user submitted notes using Express. A substantial amount of starter code was given, although most of it was empty and required me to complete the logic itself. Here I learned how to setup an express server, and handle user requests through routing."
+    },
+    "12 Employee Tracker": {
+        "repository": "https://github.com/AlecWGreene/Assignment-12-Employee-Tracker",
+        "contentType": "text",
+        "content": "This assignment was my first foray into databases, specifically SQL. Using NodeJS and Inquirer, I built a CLI which allowed complex manipulation of a database. The app will require the user to be running a MySQL server on localhost, and add a password.txt file to the root directory. Once the setup is complete, the user can run the app. It will automatically setup the tables when the Debug_Seed_SQL script is ran, and to load the sample data the user can run Debug_Seed_Table.sql. <br /> Once the user has the database setup, it's time to go! The user can view the tables, sorting the selected table using 4 different directional criteria (including REGEXP search) with contextual question options using asynchronous calls to the custom built ORM. The user can also update information, answering the prompts to select/enter valid information to send back to the database. The validate database option will fetch the database tables and run a set of rules against them, returning any warnings or errors that the app has found. The app uses a series of asynchronous menu functions which await Inquirer prompts, with nearly each Inquirer prompt utilizing the async features behind its properties to query the database for information to be used in a table display (using a custom build renderer with colors.js), option displays, and input validation. Finally, I built a SQL procedure to reset the department managaers of a specified department, and a SQL function to calculate the salary expenses of a department. "
+    },
+    "13 Burger Tracker": {
+        "deployment": "https://assignment-17-burger.herokuapp.com/",
+        "repository": "https://github.com/AlecWGreene/Assignment-13-Burger-Eater",
+        "contentType": "text",
+        "content": "My first large project which could be considered fullstack, I constructed a site using MySQL, Express-Handlebars, NodeJS, and the MVC paradigm where the user could create and store burgers. However, I took an extra step and built an authentication system from scratch which used sha256-js to hash user passwords. A custom built ORM and MySQL procedures allows the app to dynamically create tables where it will store numbers representing the binary hashes of burgers the user has created. Express session stores the user's login status and allows them to mutate their data while enabling the server to block unauthorized users from the burger page. As this was before we covered Sequelize, I had to build the ORM again from scratch to allow these features to function."
+    },
+    "17 Fitness Tacker": {
+        "deployment": "https://assignment18workouttracker.herokuapp.com/",
+        "repository": "https://github.com/AlecWGreene/Assignment-15-Workout-Tracker",
+        "contentType": "text",
+        "content": "My first experience with NoSQL languages, in particular MongoDB. This site uses Express routing to handle user requests and CRUD MongoDB entries. A large amount of starter code was given, leaving little room for expansion on the features."
+    },
+    "18 Budget Tracker": {
+        "deployment": "https://assignment18budgettracker.herokuapp.com/",
+        "repository": "https://github.com/AlecWGreene/Assignment-16-Budget-Tracker",
+        "contentType": "text",
+        "content": "This assignment was again mostly starter code, with very specific functionality left for me to implement. In this case, I learned how to interace with IndexedDB and manipultae it using features like cursor management etc."
+    },
+    "19 User Directory": {
+        "deployment": "https://alecwgreene.github.io/Assignment-17-Employee-Directory/",
+        "repository": "https://github.com/AlecWGreene/Assignment-17-Employee-Directory",
+        "contentType": "text",
+        "content": "Leading into the final project, I was tasked with creating a react app to display employee information. I used the .csv files from Assignment 12 Employee Tracker to populate the page, and taught myself react native to assemble the page. I experimented with many different routers for react native, and learned how to utilize the more fluid flex-box system after so long of using bootstrap."
+    }
+}
