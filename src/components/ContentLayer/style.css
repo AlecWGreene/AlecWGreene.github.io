@@ -1,0 +1,50 @@
+#ContentTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 36pt;
+}
+
+#ContentLinkContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 0.25rem;
+}
+
+.contentLinkWrapper {
+    width: fit-content;
+    display: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contentLinkHeader {
+    font-weight: bold;
+}
+
+.contentLinkText {
+    color: rgba(210,0,0,1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contentLinkText:hover {
+    color: rgba(121,0,0,1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#ContentDescription {
+    position: relative;
+    text-indent: 1rem;
+    min-width: 600px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: rgba(40,40,40,1);
+}

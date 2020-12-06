@@ -1,34 +1,41 @@
-import logo from './logo.svg';
+import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
-import ModalLayer from './components/ModalLayer';
 import { createContext, useReducer } from 'react';
+
+// Component imports 
+import NavBar from "./components/NavBar";
+import ModalLayer from './components/ModalLayer';
+import ContentLayer from "./components/ContentLayer";
+
 
 export const PageStateContext = createContext();
 
-const pageStateReducer = (action, state) => {
-
-}
-
-const categories = ["Demos", "Projects", "Homework",  "Resume", "About Me"];
-
-const pages= {
-
+const pageStateReducer = (state, action) => {
+  switch(action.type){
+  case "viewPage":
+    return {
+      ...state,
+      breadcrumbs: action.payload
+    }
+  default:
+    throw new Error(`pageStateReducer: action type ${action.type} is not a valid action`);
+  }
 }
 
 function App() {
 
   const [state, dispatch] = useReducer(pageStateReducer, {
-    breadcrumbs: ["Demos"]
+    breadcrumbs: ["Demos", "Ashen Void"]
   });
 
   return (
-    <div className="App">
-      <div>
-
+    <PageStateContext.Provider value={[state, dispatch]}>
+      {/* Page Wrapper */}
+      <div id="Wrapper">
+        <NavBar />
+        <ContentLayer />
       </div>
-
-      <ModalLayer active={""} />
-    </div>
+    </PageStateContext.Provider>
   );
 }
 
